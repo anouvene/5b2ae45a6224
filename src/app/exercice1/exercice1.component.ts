@@ -6,11 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercice1.component.css']
 })
 export class Exercice1Component implements OnInit {
-  public compteur: number = 0; 
+  public compteur: number = 0;
+  public result: number = 0;
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  /**
+   * Recevoir le résultat du compteur émit par le composant enfant
+   * @param $resultEmitted
+   * @returns {number}
+   */
+  displayResult($resultEmitted): number {
+    return this.result = $resultEmitted;
   }
 
 }

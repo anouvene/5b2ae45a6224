@@ -12,6 +12,8 @@
             "element",
             "app",
             "kebab-case"
-        ]
+        ],
+      "typedef": [false, "call-signature", "parameter", "member-variable-declaration"],
+      "no-inferrable-types": [true, "ignore-params", "ignore-properties"]
     }
 }
