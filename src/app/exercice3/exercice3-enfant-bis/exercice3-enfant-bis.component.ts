@@ -16,7 +16,7 @@ export class Exercice3EnfantBisComponent implements OnInit, AfterContentInit {
   ngOnInit() { }
 
   ngAfterContentInit() {
-    // convert HTML strings to DOM Elements
+    // Convert HTML strings to DOM Elements
     const contentParsed = new DOMParser().parseFromString(this.el.nativeElement.innerHTML, 'text/html');
     this.content = contentParsed.body.firstChild;
 
