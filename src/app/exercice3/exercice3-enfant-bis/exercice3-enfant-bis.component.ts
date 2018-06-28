@@ -1,4 +1,4 @@
-import { Component, OnInit, ContentChild, AfterContentInit } from '@angular/core';
+import { Component, OnInit, ContentChild, AfterContentInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-exercice3-enfant-bis',
@@ -8,7 +8,7 @@ import { Component, OnInit, ContentChild, AfterContentInit } from '@angular/core
 export class Exercice3EnfantBisComponent implements OnInit, AfterContentInit {
 
   @ContentChild('refContent')
-  private el;
+  private el: ElementRef;
   public content: Node;
 
   constructor() { }
